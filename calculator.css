@@ -1,0 +1,191 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: right;
+}
+
+#display {
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
+}
+/* Add hover effect to buttons */
+button:hover {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Add animations to clear and calculate buttons */
+.clear-button {
+    animation: pulse 1s infinite;
+}
+
+.calculate-button {
+    animation: bounce 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+/* Animated background */
+body {
+    background: linear-gradient(45deg, #ff9933, #33ccff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Styling for calculator */
+.calculator {
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Colorful button styles with hover effect */
+.button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.number-button {
+    background-color: #33cc33;
+    color: white;
+}
+
+.number-button:hover {
+    background-color: #29a329;
+}
+
+.operator-button {
+    background-color: #ff9900;
+    color: white;
+}
+
+.operator-button:hover {
+    background-color: #e68a00;
+}
+
+.clear-button {
+    background-color: #ff3333;
+    color: white;
+}
+
+.clear-button:hover {
+    background-color: #cc2929;
+}
+
+.calculate-button {
+    background-color: #ffcc00;
+    color: white;
+}
+
+.calculate-button:hover {
+    background-color: #e6b800;
+}
+/* Add styles for the calculator header */
+.calculator-header {
+    text-align: center;
+    background-color: #33cc33;
+    padding: 10px;
+}
+
+.made-by-text {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+/* Add styles for the calculator header */
+.calculator-header {
+    text-align: center;
+    background-color: #33cc33;
+    padding: 10px;
+    perspective: 200px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.made-by-text {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transform: rotateX(0deg);
+    transform-origin: center;
+    transition: transform 0.5s;
+}
+
+.made-by-text:hover {
+    transform: rotateX(20deg);
+}
+
+
+

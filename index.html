@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-header">
+            <div class="made-by-text" id="headerText">Made By 💗 Debasish</div>
+        </div>
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <!-- Colorful buttons with hover effect -->
+            <button class="number-button" onclick="appendToDisplay('7')">7</button>
+            <button class="number-button" onclick="appendToDisplay('8')">8</button>
+            <button class="number-button" onclick="appendToDisplay('9')">9</button>
+            <button class="operator-button" onclick="appendToDisplay('/')">/</button>
+            <button class="number-button" onclick="appendToDisplay('4')">4</button>
+            <button class="number-button" onclick="appendToDisplay('5')">5</button>
+            <button class="number-button" onclick="appendToDisplay('6')">6</button>
+            <button class="operator-button" onclick="appendToDisplay('*')">*</button>
+            <button class="number-button" onclick="appendToDisplay('1')">1</button>
+            <button class="number-button" onclick="appendToDisplay('2')">2</button>
+            <button class="number-button" onclick="appendToDisplay('3')">3</button>
+            <button class="operator-button" onclick="appendToDisplay('-')">-</button>
+            <button class="number-button" onclick="appendToDisplay('0')">0</button>
+            <button class="number-button" onclick="appendToDisplay('.')">.</button>
+            <button class="operator-button" onclick="appendToDisplay('+')">+</button>
+            <button class="clear-button" onclick="clearDisplay()">C</button>
+            <button class="calculate-button" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
